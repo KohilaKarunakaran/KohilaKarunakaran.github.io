@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>getElementById</title>
+</head>
+<body>
+    <div><p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero vero maiores ducimus neque error non odio magni, autem totam repudiandae accusamus quae corrupti dolore! Hic ipsa sit cum neque ipsum?</p></div>
+</body>
+
+<script>
+    var para = document.getElementById("para");
+    var oldpara = para.innerHTML;
+    para.innerHTML = "This is a new para.";
+
+
+</script>
+</html>

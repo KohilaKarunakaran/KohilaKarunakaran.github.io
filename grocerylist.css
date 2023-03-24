@@ -1,0 +1,68 @@
+.section-center
+{
+height: 350px;
+width: 550px;
+border: 1px solid  rgb(243, 135, 243);
+margin: 200px 600px 400px 600px;
+font-family: sans-serif;
+background-color: rgb(243, 135, 243);
+border-radius: 5px;
+}
+.grocery-bud
+{
+    padding: 10px 0px 10px 160px;
+    font-size: 25px;
+    color:aqua
+}
+#grocery
+{
+    height: 25px;
+    width: 370px;
+    margin-left: 35px;
+    margin-right: 0px;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+}
+.submit
+{
+    height: 30px;
+    width: 70px;
+    margin-right: 35px;
+    margin-left:0%;
+    border: 1px solid rgb(182, 224, 243);
+    border-radius: 2px;
+    background-color: rgb(182, 224, 243);
+    cursor: pointer;
+    content:var();
+}
+
+.grocery-item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 1rem;
+    text-transform: capitalize;
+}
+.alert
+{
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    text-transform: capitalize ;
+}
+
+.alert-danger
+{
+    color: rgb(235, 12, 12);
+    background: rgb(240, 153, 153);
+}
+.alert-success
+{
+    color: rgb(4, 99, 4);
+    background: rgb(187, 248, 185);
+}

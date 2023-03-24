@@ -1,0 +1,28 @@
+:root {
+    --clr-primary-1: hsl(211, 100%, 90%);
+
+}
+#history, #vision, #goals
+{
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+.tab-btn
+{
+   height: 30px;
+   width: 100px;
+   border: none;
+   background-color: rgb(115, 194, 194);
+}
+img {
+    height: 300px;
+    width: 700px;
+}

@@ -1,0 +1,12 @@
+#para
+{
+    height: 500px;
+    width: 500px;
+    background-color: coral;
+    border: 2px solid black;
+    margin: 10px 10px 10px 10px;
+    text-align:center;
+    font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+}

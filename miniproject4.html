@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <script>
+function tip(morning,evening) {
+    var total = morning + evening;
+      return total;
+}
+var week1 = tip(50,80); console.log(week1)
+var week2 = tip(65,180); console.log(week2)
+
+function tip(totalAmount, tip=10, returnTipOnly=false) {
+    tip = tip / 100;
+    var tipAmount = totalAmount * tip
+    totalAmount = totalAmount + tipAmount
+    if(returnTipOnly) {
+        return tipAmount
+    }
+    return totalAmount
+
+}
+ var totalBill = tips(25, 10);
+ console.log(totaltip)
+
+    </script>
+</body>
+</html>
