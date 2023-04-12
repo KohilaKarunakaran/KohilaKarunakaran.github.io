@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kuukauden analyysi</h1>
+    <p>Kirjoita syntymä kuukausi (esim. tammikuu, helmikuu jne.</p>
+    <input type="text" id="syntymäkuukausi">
+    <button onclick="analysoikuukausi()"> Analysoi </button>
+    <p id="tulos"></p>
+    <script>
+        function analysoikuukausi() {
+            var kuukausi =
+            document.getElementById("syntymäkuukausi").value.toLowerCase();
+            var tulos = document.getElementById("tulos")
+
+            if (kuukausi === "joulukuu" || kuukausi === "tammikuu" || kuukausi === "helmikuu") {
+tulos.innerHTML = "Olet sysntynyt talvella"
+            }
+            if (kuukausi === "maaliskuu" || kuukausi === "huuhtikuu" || kuukausi === "toukokuu") {
+tulos.innerHTML = "Olet sysntynyt keväälla"
+            }
+            if (kuukausi === "kesäkuu" || kuukausi === "heinäkuu" || kuukausi === "elokuu") {
+tulos.innerHTML = "Olet sysntynyt kesälla"
+            }
+            if (kuukausi === "syyskuu" || kuukausi === "lokakuu" || kuukausi === "marraskuu") {
+tulos.innerHTML = "Olet sysntynyt syksyllä"
+        }
+    }
+
+    </script>
+</body>
+</html>
