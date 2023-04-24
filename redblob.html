@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #gameArea {
+            border: 4px solid green;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+            text-align: center;
+            overflow: hidden;
+            /* to hide scroll bar*/
+        }
+
+        h1 {
+            font-family: comic Sans MS;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Blue block</h1>
+    <canvas id="gameArea" width="600" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById("gameArea")
+        const ctx = canvas.getContext("2d")
+
+        let x = 100;
+        let y = 100;
+        let radius = 50;
+        let speed = 10;
+
+        let upPressed = false;
+        let downPressed = false;
+        let leftPressed = false;
+        let rightPressed = false;
+
+
+        //Game Loop
+        function drawGame() {
+            requestAnimationFrame(drawGame);
+            clearScreen();
+            inputs();
+            boundryCheck();
+            drawRedBlob();
+        }
+        function boundryCheck() {
+            if (y < radius) {
+                y = radius;
+            }
+            if (y > canvas.height - radius) {
+                y = canvas.height - radius;
+            }
+            if (x < radius) {
+                x = radius;
+            }
+            if (x > canvas.width - radius) {
+                x = canvas.width - radius;
+            }
+        }
+
+        function inputs() {
+            if (upPressed) {
+                y = y - speed;
+            }
+            if (downPressed) {
+                y = y + speed;
+            }
+            if (leftPressed) {
+                x = x - speed;
+            }
+            if (rightPressed) {
+                x = x + speed;
+            }
+        }
+
+        function drawRedBlob() {
+            ctx.fillStyle = "red";
+            if (upPressed) {
+                ctx.fillStyle = "blue"
+            }
+            if (downPressed) {
+                ctx.fillStyle = "green"
+            }
+            if (leftPressed) {
+                ctx.fillStyle = "white"
+            }
+            if (rightPressed) {
+                ctx.fillStyle = "yellow"
+            }
+
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+
+        function clearScreen() {
+            ctx.fillStyle = "rgb(255, 102, 255)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        document.body.addEventListener("keydown", keydown);
+        document.body.addEventListener("keyup", keyup);
+
+        function keydown(event) {
+            if (event.keyCode == 38) {
+                upPressed = true;
+            }
+
+            if (event.keyCode == 40) {
+                downPressed = true;
+            }
+
+            if (event.keyCode == 37) {
+                leftPressed = true;
+            }
+
+            if (event.keyCode == 39) {
+                rightPressed = true;
+            }
+        }
+        function keyup(event) {
+            if (event.keyCode == 38) {
+                upPressed = false;
+            }
+
+            if (event.keyCode == 40) {
+                downPressed = false;
+            }
+
+            if (event.keyCode == 37) {
+                leftPressed = false;
+            }
+
+            if (event.keyCode == 39) {
+                rightPressed = false;
+            }
+        }
+
+        drawGame();
+    </script>
+</body>
+
+</html>
