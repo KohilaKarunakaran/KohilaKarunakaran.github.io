@@ -9,31 +9,45 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
     <title>Miniproject</title>
+    <style>
+        #animate {
+            height: 50px;
+            width: 150px;
+            background-color: blue;
+            color : white
+        }
+    </style>
 </head>
 <body>
-<h1 style="font-size:30px; color:blue">Pet Photos</h1>
-<div>
-<form>
-    <label> Cat lovers</label>
-    <input type="checkbox" id="cat"><br>
-    <label> Dog lovers</label>
-    <input type="checkbox" id="dog"><br>
-    <label> No Pet</label>
-    <input type="checkbox" id="nothing"><br>
-</form>
-</div>
+    <label>Click the checkbox</label>
+    <input type="checkbox" id="demo"><br>
+    <img id="cat" src="https://images6.fanpop.com/image/photos/39000000/Cat-cats-39082303-1680-1050.jpg" style: height="20px"; width="20px"> <br>
+    <button id="animate" >Animation</button>
+
+
 <script>
     
-    document.getElementById("cat").addEventListener("click", function() {
-        alert("Your pet animanl is Cat")
+    var x = document.getElementById("demo")
+        x.addEventListener("click", myFunction);
 
-    })
-    document.getElementById("dog").addEventListener("click", function() {
-        alert("Your pet animanl is Dog")
-    })
-    document.getElementById("nothing").addEventListener("click", function() {
-        alert("Your don't have pet")
-    })
+        function myFunction() {
+            cat.width = "600"
+            cat.height = "600"
+        }
+
+        let animate = document.getElementById("animate")
+        animate.addEventListener("click", myAnimation)
+        
+
+        function myAnimation() {
+            
+        animate.background_color = red;
+            }
+
+        
 </script>
+
+    
+
 </body>
 </html>
