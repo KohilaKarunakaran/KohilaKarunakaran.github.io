@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <p id = "brand"></p>
+   <p id = "model"></p>
+   <p id = "regNum"></p>
+   <p id="oil"></p>
+   <p id="gear"></p>
+   <p id="vehType"></p>
+   <p id="numPeople"></p>
+   <p id="numDoors"></p>
+   <p id="color"></p>
+   <p id="power"></p>
+   <p id="engine"></p>
+   <p id="speed"></p>
+
+<style>
+    p {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        color:brown;
+    }
+</style>
+    
+  
+</head>
+<body>
+
+    <script>
+        var car = {
+            "brand" : "Audi",
+            "model" : "Farmer",
+            "registerNumber" : "MNA-492",
+            "oil" : "Petrol",
+            "gear" : "Automation",
+            "vehicleType" : "Sedan",
+            "numberofPeople" : 5,
+            "numberofDoors" : 4,
+            "color" : "Blue",
+            "power" : "140kw",
+            "engine" : "137.0 g/km",
+            "speed" : "226 km/h"
+        }
+        document.getElementById("brand").innerHTML = "The car type is : " + car.brand
+        document.getElementById("model").innerHTML = "The car model is : " + car.model
+        document.getElementById("regNum").innerHTML = "The car registration number is : " + car.registerNumber
+        document.getElementById("oil").innerHTML = "Oil type : " + car.oil 
+        document.getElementById("gear").innerHTML = "The car gear type is : " + car.gear
+        document.getElementById("vehType").innerHTML = "The car vehicle type is : " + car.vehicleType
+        document.getElementById("numPeople").innerHTML = "Number of people : " + car.numberofPeople
+        document.getElementById("numDoors").innerHTML = "Number of doors : " + car.numberofDoors
+        document.getElementById("color").innerHTML = "The car color is : " + car.color
+        document.getElementById("power").innerHTML = "The car power is : " + car.power
+        document.getElementById("engine").innerHTML = "The car engine power is : " + car.engine
+        document.getElementById("speed").innerHTML = "The car highest speed is : " + car.speed
+
+
+    </script>
+    
+</body>
+</html>
