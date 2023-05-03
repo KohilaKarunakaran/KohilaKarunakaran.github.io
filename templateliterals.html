@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals</title>
+</head>
+
+<body>
+    <h1>Template Literals</h1>
+    
+<p id = "demo"></p>
+<p id = "demo1"></p>
+<p id = "demo2"></p>
+
+
+
+    <script>
+        let firstName = prompt("Enter your first name here: ")
+         let lastName = prompt("Enter your Last name here: ")
+         let mail =  prompt("Enter your Email-id here: ")
+        
+        document.getElementById("demo").innerHTML = "My First name is " + firstName
+        document.getElementById("demo1").innerHTML = `My Last name is ${lastName}`
+        document.getElementById("demo2").innerHTML = `My Email-id is ${mail}, send me a confirmation` 
+
+
+    </script>
+</body>
+
+</html>
