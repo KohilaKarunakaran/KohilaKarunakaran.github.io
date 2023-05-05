@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Star war poeple</h1>
+    <p id="name"></p>
+    <p id="height"></p>
+    <p id="hair"></p>
+    <p id="skin"></p>
+    <p id="dob"></p>
+    <script>
+
+        //console.log("Before")
+        fetch("https://swapi.dev/api/people/5/")
+            .then(function (response) {
+                //console.log("Then #1")
+                return response.json()
+            })
+            .then(function (res) {
+                //console.log("Then #2")
+                luke = res
+                //const [movie1, movie2, movie3,movie4,movie5] = luke.films
+                // console.log(movies)
+                document.getElementById("name").innerHTML = "Luke name is : " + luke.name
+                document.getElementById("height").innerHTML = "Her height is : " + luke.height
+
+                document.getElementById("hair").innerHTML = "Her hair color is : " + luke.hair_color
+
+                document.getElementById("skin").innerHTML = "Her skin color is : " + luke.skin_color
+
+                document.getElementById("dob").innerHTML = "Her birth year is : " + luke.birth_year
+
+
+                //luke.films.forEach(function (url, index) {
+                    //console.log(index, url)
+                //})
+            })
+       // console.log("After")
+        //console.log("LUKE", luke)
+    </script>
+</body>
+
+</html>
