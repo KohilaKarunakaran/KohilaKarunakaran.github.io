@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TimeOut</h1>
+    <script>
+console.log("First comsole log")
+        setTimeout (function() {
+            console.log("Second comsole log : Time out")
+    
+            const body = document.querySelector("body")
+            body.style.backgroundColor = "violet"
+            body.style.color = "blue"
+        }, 10000)
+        console.log("Third console log")
+    </script>
+</body>
+</html>
