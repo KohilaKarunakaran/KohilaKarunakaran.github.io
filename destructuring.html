@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Destructuring</h1>
+<body>
+    <script>
+        //var arr = ["Kohila", "Bala", "Pooja", "Harshiv", "dffd", "fddefvs", "dsffs"]
+        //const kohila = arr[0]
+       // const bala = arr[1]
+       //let [kohila, bala, pooja, harshiv, ...rest] = arr
+      // console.log(rest)
+
+      // var fullName = prompt("What is your Full name?")
+       //let [firstName, lastName] = fullName.split(" ")
+      // console.log(firstName, "is the first name")
+      // console.log(lastName, "is the last name")
+
+      const person = {
+          "name" : "Kohila",
+          "food" : "pizza",
+          "color" : "blue"
+      }
+
+      let {
+        name,
+         food,
+         color = "blue" 
+        } = person
+      console.log("Name is ", name)
+      console.log("Favorite food is ", food)
+      console.log("Fav color ", color)
+    </script>
+</body>
+</html>
