@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Languages</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:aqua;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .language img {
+      width: 80px;
+      margin-right: 20px;
+    }
+
+    .language-info {
+      flex-grow: 1;
+    }
+
+    .language-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .language-description {
+      color: #666;
+    }
+
+    .code-example {
+      background-color: #f9f9f9;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .code-example code {
+      display: block;
+      color: #333;
+      white-space: pre;
+    }
+
+    .list-example {
+      margin-bottom: 20px;
+    }
+
+    .list-example ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #666;
+    }
+
+    .list-example li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Programming Languages</h1>
+
+  <div class="language">
+    <img src="https://th.bing.com/th/id/OIP.BlizS0SYUWuhAU5v5kkLiAHaE_?w=258&h=180&c=7&r=0&o=5&pid=1.7" alt="Python Logo">
+    <div class="language-info">
+      <div class="language-name">Python</div>
+      <div class="language-description">
+        Python is an easy-to-read and versatile programming language. It is well-suited for web development, data processing, and artificial intelligence.
+      </div>
+      <div class="code-example">
+        <code>
+          # Example Python code
+          def greet(name):
+              print("Hello, " + name + "!")
+        </code>
+      </div>
+    </div>
+  </div>
+
+  <div class="language">
+    <img src="https://th.bing.com/th?id=OIP._Mq1T1IJe6cw14lre2cBzgHaE8&w=306&h=204&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="C++ Logo">
+    <div class="language-info">
+      <div class="language-name">C++</div>
+      <div class="language-description">
+        C++ is a powerful and versatile programming language. It is often used in system programming and resource-intensive applications.
+      </div>
+      <div class="code-example">
+        <code>
+          // Example C++ code
+          #include <iostream>
+          
+          int main() {
+              std::cout << "Hello, World!" << std::endl;
+              return 0;
+          }
+        </code>
+      </div>
+    </div>
+  </div>
+
+  <div class="language">
+    <img src="https://th.bing.com/th/id/OIP.UIqoYN6a49pqw7nnrx2mjQHaIg?w=186&h=213&c=7&r=0&o=5&pid=1.7" alt="SQL Logo">
+    <div class="language-info">
+      <div class="language-name">SQL</div>
+      <div class="language-description">
+        SQL (Structured Query Language) is a database query language. It is used for creating, retrieving, and modifying data in databases.
+      </div>
+      <div class="code-example">
+        <code>
+          -- Example SQL query
+          SELECT * FROM customers WHERE age > 30;
+        </code>
+      </div>
+    </div>
+  </div>
+
+  <div class="language">
+    <img src="https://th.bing.com/th/id/OIP.lwDa90HV9bdav2987iyL6QHaHa?w=183&h=184&c=7&r=0&o=5&pid=1.7" alt="Java Logo">
+    <div class="language-info">
+      <div class="language-name">Java</div>
+      <div class="language-description">
+        Java is a widely-used and versatile programming language. It is used in web applications, mobile development, and game programming, among other areas.
+      </div>
+      <div class="code-example">
+        <code>
+          // Example Java code
+          public class HelloWorld {
+              public static void main(String[] args) {
+                  System.out.println("Hello, World!");
+              }
+          }
+        </code>
+      </div>
+    </div>
+  </div>
+
+  <div class="language">
+    <img src="https://th.bing.com/th/id/OIP.72gme9JmM3IgshbjAZILsQHaHa?w=189&h=188&c=7&r=0&o=5&pid=1.7" alt="JavaScript Logo">
+    <div class="language-info">
+      <div class="language-name">JavaScript</div>
+      <div class="language-description">
+        JavaScript is a browser-based language used for developing interactive websites and applications.
+      </div>
+      <div class="code-example">
+        <code>
+          // Example JavaScript code
+          function greet(name) {
+              console.log("Hello, " + name + "!");
+          }
+        </code>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-example">
+    <h2>Why Should I Learn These Languages?</h2>
+    <ul>
+      <li>Python: Easy-to-read, versatile, and widely-used language.</li>
+      <li>C++: Powerful language for resource-intensive applications.</li>
+      <li>SQL: Essential for handling databases and managing data.</li>
+      <li>Java: Widely-used language in various application domains.</li>
+      <li>JavaScript: Essential for web development and browser-based applications.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
