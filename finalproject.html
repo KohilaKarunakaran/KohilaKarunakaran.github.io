@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        font-family:monospace;
+        font-size: 80px;
+        text-align: center;
+        font-style: italic;
+    }
+    .letter {
+        display: inline-block;
+        transition: transform 0.3s ease-out;
+    }
+
+    .letter:hover {
+        transform: scale(1.2);
+        color: aqua;
+    }
+</style>
+<body>
+    <h1 id="heading">FinalProject</h1>
+    <script>
+var heading = document.getElementById("heading")
+var text = heading.textContent;
+var letters = text.split("")
+
+heading.innerHTML = "";
+
+for (var i = 0; i < letters.length; i++) {
+    var letter = document.createElement("span");
+    letter.innerHTML = letters[i];
+    letter.className = "letter";
+
+    letter.addEventListener("mouseover", function() {
+        this.classList.add("animate");
+    });
+
+    letter.addEventListener("mouseout", function() {
+        this.classList.remove("animate");
+    });
+
+    heading.appendChild(letter);
+}
+
+    </script>
+</body>
+</html>
