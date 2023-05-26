@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            background-color: #f2f2f2;
+        }
+        
+        #imageContainer {
+            margin-top: 50px;
+        }
+        
+        #temperatureInput {
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Muuta sivun ulkoasua</h1>
+    
+    <div id="imageContainer">
+        <img id="image" src="https://th.bing.com/th/id/OIP._X5OUMDqxUx8ASxwrznHkwHaE8?w=274&h=182&c=7&r=0&o=5&pid=1.7" alt="Kuva">
+    </div>
+    
+    <div id="temperatureInput">
+        <label for="temperature">Syötä ulkolämpötila:</label>
+        <input type="number" id="temperature" min="-50" max="50" step="1">
+    </div>
+
+
+    <script>
+    const checkbox = document.createElement("input");
+checkbox.type = "checkbox";
+checkbox.id = "checkbox";
+
+const label = document.createElement("label");
+label.textContent = "Vaihda kuva";
+label.htmlFor = "checkbox";
+
+document.body.appendChild(checkbox);
+document.body.appendChild(label);
+
+checkbox.addEventListener("change", function() {
+    const image = document.getElementById("image");
+    
+    if (this.checked) {
+        image.src = "https://th.bing.com/th/id/OIP.gC4qlAfB96LznSOBGeSuqgHaHa?w=159&h=180&c=7&r=0&o=5&pid=1.7";
+    } else {
+        image.src = "";
+    }
+});
+
+// Taustan väri vaihtuu annetun ulkolämpötilan mukaisesti
+const temperatureInput = document.getElementById("temperature");
+
+temperatureInput.addEventListener("input", function() {
+    const temperature = parseInt(this.value);
+    const body = document.body;
+    
+    if (temperature >= 30) {
+        body.style.backgroundColor = "red";
+    } else if (temperature <= 0) {
+        body.style.backgroundColor = "blue";
+    } else {
+        body.style.backgroundColor = "#f2f2f2";
+    }
+});
+</script>
+</body>
+</html>
