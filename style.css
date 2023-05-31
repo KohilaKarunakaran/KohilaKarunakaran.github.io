@@ -1,117 +1,18 @@
-#p1,
-#p2,
-.logo,
-.right {
-    font-family: Arial, Helvetica, sans-serif;
+h1 {
+    color: red;
 }
-#p1 {
-    font-size: 60px;
-    margin: 0px 60px 30px 100px;
-    font-weight: bold;
+#blue {
+    color: blue;
 }
-#p2 {
-    font-size: 30px;
-    margin: 20px 60px 50px 100px;
+body {
+    background-color:antiquewhite;
 }
-
-header {
-    column-count:2 ;
-    height: 100px;
-    background-color: rgb(228, 225, 225);
-    border: 1px solid rgb(228, 225, 225);
-    margin-bottom: 150px;
+@media(max-width: 640px)
+{
+    head,body
+    {
+        float: initial;
+        width: 80%;
+        height: auto;
     }
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-left: 45px;
-}
-#kirjaudu {
-    width: 180px;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
-    float: right;
-    margin: 20px 55px 0px 0px;
-    padding: 5px 10px 5px 10px;
-    font-size: 25px;
-   }
-   #Kirja 
-   {
-       height: 80px;
-       width: 230px;
-background-color: black;
-margin-left: 100px;
-font-size: 28px ;
-text-align: center;
-color: white;
-border-radius: 10px;
-   }
-
-.footer
-{
-   height: 200px;
-   background-color: rgb(228, 225, 225); 
-margin-top: 10px;
-text-align: center;
-font: 20px bold black;
-}
-.right
-{
-width: 850px;
-height: 650px;
-border: 2px solid black;
-border-radius: 5px;
-}
-    
-.body
-{
-    height: 800px;
-    column-count: 2;
-}
-table, th, tr, td
-{
-    border: 2px solid rgb(220,220,220);
-    font-size: 8px;
-text-align: center;
-}
-table 
-{
-    width:580px;
-    height: 110px;
-    margin: 100px 10px 0px 100px;
-
-}
-
-#r1, #r2, #r3
-{
-    border:2px solid black;
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
-    background-color: rgb(220,220,220);
-}
-#r1 {
-    margin-top: 25px;
-    margin-left: 40px;
-}
-#r2 
-{
-    margin-top: -20px;
-    margin-left: 80px;
-}
-#r3 
-{
-    margin-top: -20px;
-    margin-left: 120px;
-}
-th {
-    background-color: rgba(238, 232, 232, 0.932);
-}
-#icon {
-    margin-right: 2px;
-    margin-left: -20px;
 }

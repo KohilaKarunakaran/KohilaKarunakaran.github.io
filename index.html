@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title id="demo"></title>
+  <link rel="stylesheet" href="style.css"/>
+  
 </head>
-
 <body>
-    <p id="demo"></p>
-    <script>
-        let x = myFunction(4, 3);
-        document.getElementById("demo").innerHTML = x;
-
-        function myFunction(a, b) {
-            return a * b;
-            
-        }
-    </script>
+    <h1>Welcome to my page</h1>
+    <p id="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, odio soluta? Sint quas quaerat eius, odit cupiditate itaque eligendi! Explicabo nemo laudantium ex, aliquam modi aspernatur aliquid consectetur sint quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro delectus laboriosam nihil odio. Quae autem, ullam eveniet culpa, numquam soluta aliquid saepe pariatur amet necessitatibus facere distinctio dolores dolorum!</p>
+    <img src="https://th.bing.com/th/id/OIP._X5OUMDqxUx8ASxwrznHkwHaE8?w=263&h=180&c=7&r=0&o=5&pid=1.7" alt="Beautiful nature">
+    
+<script>
+    var text = prompt("Type here and make a title of the page:")
+    document.getElementById("demo").innerHTML = text;
+</script>
 </body>
-
 </html>
