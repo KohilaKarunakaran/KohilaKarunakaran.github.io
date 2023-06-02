@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        h1 {
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 100px;
+        }
+        p {
+            font-size: 40px;
+        }
+
+        img {
+            width: 1600px;
+            height: 1200px;
+        }
+
+        @media (max-width:640px) {
+            h1 {
+                color: green;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 50px;
+            }
+        }
+        @media (max-width: 640px) {
+            p {
+                font-size: 20px;
+                color: coral;
+            }
+        }
+        @media (max-width: 640px) {
+            img {
+                display: none;
+            }
+        }
+        @media (min-width: 400px) {
+            body {
+                background-color: blanchedalmond;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quaerat culpa. Vel quasi ex dolorum, iure accusamus nisi culpa hic, eum incidunt, laboriosam earum! Quibusdam recusandae nesciunt veniam magni omnis!</p>
+    <img src="https://th.bing.com/th/id/OIP.HhzA6S853Fv_tVTKCdMG6wHaEo?w=287&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+        alt="birds">
+</body>
+
+</html>
